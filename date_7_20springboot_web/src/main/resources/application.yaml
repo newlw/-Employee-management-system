@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/date_7_21?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.jdbc.Driver
+  thymeleaf:
+    cache: false
+    enable-spring-el-compiler: true
+    encoding: UTF-8
+    suffix: .html
+    check-template-location: true
+    check-template: true
+    servlet:
+      content-type: text/html; charset=utf-8
+
+  #配置国际化文件真实位置
+  messages:
+    basename: i18n.login
+
+    #springboot日期格式默认dddd/dd/dd
+  mvc:
+    format:
+      date: yyyy/MM/dd
+
+
+mybatis:
+  type-aliases-package: com.lw.springboot_web.pojo
+  mapper-locations: classpath:mapper/*Mapper.xml       # mapper映射文件
+
+
+
