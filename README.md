@@ -1,1 +1,1 @@
-hahaha
+springboot整合mybatis实现的员工管理系统，适合新手练习
